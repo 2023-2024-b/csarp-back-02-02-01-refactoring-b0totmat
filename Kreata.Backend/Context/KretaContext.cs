@@ -1,4 +1,4 @@
-﻿using Kreata.Backend.Datas.Entities;
+﻿using Kreata.Shared.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Kreata.Backend.Context

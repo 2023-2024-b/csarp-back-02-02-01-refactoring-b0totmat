@@ -1,6 +1,6 @@
 ﻿using Kreata.Backend.Context;
-using Kreata.Backend.Datas.Entities;
-using Kreata.Backend.Datas.Responses;
+using Kreata.Shared.Models.Entities;
+using Kreata.Shared.Models.Responses;
 using Microsoft.EntityFrameworkCore;
 
 namespace Kreata.Backend.Repos

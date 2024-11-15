@@ -1,5 +1,5 @@
-﻿using Kreata.Backend.Datas.Entities;
-using Kreata.Backend.Datas.Responses;
+﻿using Kreata.Shared.Models.Entities;
+using Kreata.Shared.Models.Responses;
 
 namespace Kreata.Backend.Repos
 {

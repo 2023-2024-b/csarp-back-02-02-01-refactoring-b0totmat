@@ -19,5 +19,19 @@ namespace Kreata.Shared.Extensions
             };
         }
 
+        public static Student ToStudent(this StudentDto studentDto)
+        {
+            return new Student
+            {
+                BirthsDay = studentDto.BirthsDay,
+                EducationLevel = studentDto.EducationLevel,
+                FirstName = studentDto.FirstName,
+                Id = studentDto.Id,
+                IsWoomen = studentDto.IsWoomen,
+                LastName = studentDto.LastName,
+                SchoolClass = studentDto.SchoolClass,
+                SchoolYear = studentDto.SchoolYear
+            };
+        }
     }
 }

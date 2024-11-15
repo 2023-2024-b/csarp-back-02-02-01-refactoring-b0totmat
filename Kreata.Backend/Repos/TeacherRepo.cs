@@ -19,7 +19,7 @@ namespace Kreata.Backend.Repos
             return await _dbContext.Teachers.ToListAsync();
         }
 
-        public Task<Teacher?> GetBy(Guid id)
+        public async Task<Teacher?> GetBy(Guid id)
         {
             return await _dbContext.Teachers.FirstOrDefaultAsync(t => t.Id == id);
         }
@@ -40,6 +40,7 @@ namespace Kreata.Backend.Repos
                 response.AppendNewError($"{nameof(TeacherRepo)} osztály, {nameof(UpdateTeacherAsync)} metódusában hiba.");
                 response.AppendNewError($"{teacher} frissítése nem sikerült.");
             }
+            return response;
         }
     }
 }

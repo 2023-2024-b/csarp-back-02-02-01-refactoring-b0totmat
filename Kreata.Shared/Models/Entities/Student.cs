@@ -1,10 +1,10 @@
-﻿using Kreata.Backend.Datas.Enums;
+﻿using Kreata.Shared.Models.Enums;
 
-namespace Kreata.Backend.Datas.Entities
+namespace Kreata.Shared.Models.Entities
 {
     public class Student
     {
-        public Student(Guid id, string firstName, string lastName, DateTime birthsDay, int schoolYear, SchoolClassType schoolClass, string educationLevel,bool isWooman)
+        public Student(Guid id, string firstName, string lastName, DateTime birthsDay, int schoolYear, SchoolClassType schoolClass, string educationLevel, bool isWooman)
         {
             Id = id;
             FirstName = firstName;
@@ -13,7 +13,7 @@ namespace Kreata.Backend.Datas.Entities
             SchoolYear = schoolYear;
             SchoolClass = schoolClass;
             EducationLevel = educationLevel;
-            IsWoomen= isWooman;
+            IsWoomen = isWooman;
         }
 
         public Student(string firstName, string lastName, DateTime birthsDay, int schoolYear, SchoolClassType schoolClass, string educationLevel, bool isWooman)
@@ -51,7 +51,7 @@ namespace Kreata.Backend.Datas.Entities
 
         public override string ToString()
         {
-            return $"{LastName} {FirstName} ({SchoolYear}.{SchoolClass}), Szül: ({String.Format("{0:yyyy.MM.dd.}", BirthsDay)}), Tanulmányi szint: ({EducationLevel})";
+            return $"{LastName} {FirstName} ({SchoolYear}.{SchoolClass}), Szül: ({string.Format("{0:yyyy.MM.dd.}", BirthsDay)}), Tanulmányi szint: ({EducationLevel})";
         }
     }
 }

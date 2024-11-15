@@ -1,4 +1,4 @@
-﻿namespace Kreata.Backend.Datas.Responses
+﻿namespace Kreata.Shared.Models.Responses
 {
     public class ErrorStore
     {

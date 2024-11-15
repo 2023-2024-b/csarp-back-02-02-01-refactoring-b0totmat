@@ -4,6 +4,10 @@ namespace Kreata.Shared.Dtos
 {
     public class StudentDto
     {
+        public StudentDto()
+        {
+        }
+
         public StudentDto(Guid id, string firstName, string lastName, DateTime birthsDay, int schoolYear, SchoolClassType schoolClass, string educationLevel, bool isWoomen)
         {
             Id = id;

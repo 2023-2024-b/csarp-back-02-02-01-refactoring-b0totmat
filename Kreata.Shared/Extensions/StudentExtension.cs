@@ -7,7 +7,7 @@ namespace Kreata.Shared.Extensions
     {
         public static StudentDto ToStudentDto(this Student student)
         {
-            return new StudentDto
+            return new StudentDto()
             {
                 Id = student.Id,
                 FirstName = student.FirstName,
